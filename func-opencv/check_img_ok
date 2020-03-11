@@ -1,0 +1,8 @@
+import imghdr
+imgfile = "test.jpg"
+img = imghdr.what(imgfile)
+if img == None:
+    print(imgfile,"has matter!")
+else:
+    print(imgfile,"is OK!")
+

@@ -1,0 +1,20 @@
+import cv2
+import numpy as np
+image = cv2.imread("/home/ljdong/PycharmProjects/SiameseNetwork/transform/image/1.jpg")
+cv2.imshow("image",image)
+
+# print(image)
+image1 = image - np.zeros(3, np.int64)
+image1 = image1 // [1,1,1]
+# print(image1)
+# image2 = image1.convertTo(cv2.)
+cv2.imshow("image1",image1)
+# for i in range(image.shape[0]):
+#     for j in range(image.shape[1]):
+#         for k in range(image.shape[2]):
+#             print(image[i][j][k],image1[i][j][k])
+#             print(image[i][j][k]==image1[i][j][k])
+
+cv2.waitKey(0)
+
+减去[0,0,0] 或除以[1,1,1]会导致图像显示异常，但是像素值不异常
