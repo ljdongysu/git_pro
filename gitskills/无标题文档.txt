@@ -1,0 +1,142 @@
+sudo update-alternatives --config python
+gnome-system-monitor
+本系统中只能用 python3.6开启python3.6版本，由于env中的/usr/local/sbin/的python3 链接自/usr/bin/python3.5 ，由于 /usr/local/bin/mvNCProfile 文件中 第一行#! /usr/bin/env python3  导致之前总是从 第一个存在python3的路径中（env所有PATH中）寻找结果找到第一个/usr/local/bin/python3 链接自/usr/local/bin/python3.6，所以做了以上的修改，在前面的路径中添加了一个链接自python3.5的 python3
+
+lj.dong@bmi-tech.cn
+===============================================
+C语言的100个经典算法	https://blog.csdn.net/u012580143/article/details/66973574	/home/ljdong/code/qt/Hello_world
+
+Appid：5c2c2748   secret_key：cb89e63a3a4e0387b153027d3dbb6fa7
+
+				
+Appid：5c2c556a   secret_key	3edf3b019e124d98b641b79be4acf652
+http://gitlab.bmi/users/sign_in
+lj.dong@bmi-tech.cn
+====================================================
+
+C++在qt中运行遇到libboost编译报错/usr/bin/ld: main.o: undefined reference to symbol '_ZN5boost6system6detail20generic_category_ncxEv' /usr/local/lib/libboost_system.so.1.68.0: error adding symbols: DSO missing from command line时候，尽管添加了LIBS +=-L/... -lboost_system  还是会报错，目前唯一解决方案：
+添以下内容：
+LIBS +=/home/ljdong/boost_1_68_0/stage/lib/libboost_system.a  或者   LIBS +=/usr/local/lib/libboost_system.a   （这两个选一个即可）
+注意：等号后边没有-L指定库的位置也没有-l指定库即不能用LIBS +=-L/home/ljdong/boost_1_68_0/stage/lib -lboost_system代替。直接将两个.a 添加到LIBS中，并且尽管系统中/usr/lib/x86_64-linux-gnu  文件夹中有libboost_system.a ，但是不能用/usr/lib/x86_64-linux-gnu目录的libboost_system.a，原因不清楚。（参考：https://blog.csdn.net/qq_26849233/article/details/52973838）
+
+
+
+C++报错：error: reference to 'left' is ambiguous    原因：自定义的left 变量与库中重名；解决：修改一下变量名
+
+
+==========================================================================================================
+ watch -n 1 nvidia-smi
+
+
+==================================================================================================
+caffe solver_train.prototxt参数说明
+test_iter:   test_iter*batch_size(test的batch_size) = test_number(测试样本数量)
+test_interval:    网络训练多少个batch_size进行一次测试
+max_iter：   最大训练迭代次数，迭代多少个batch_size
+epoch:    训练/测试一次全部样本迭代次数，即batch_size 的个数
+iter_size：训练多少个batch_size 进行一次参数更新
+
+
+需要计算MAP时候直接进行一次继续训练微调模型，其中开始一次的测试即为输入caffemodel的测试结果。 ##网上有人提出需要将max_iter设置为0,但是实际测试时候如果将此设置为0,则会导致每次结果不一样，所以该方法行不通，只要此处不为0，其他地方修改，lr，test_iter,test_interval,以及训练数据集修改，第一次输出测试结果会保持不变，因此，继续跑微调为正确的结果。
+=======================================================================================
+
+神经网络中其中某一个层feature map中每一个点对应原始输入图像的感受野大小通过公式：
+（N-1）*(stride-1)+keneral_sze 逐层前向计算得到，其中N代表需要计算层的一个像素点对应的中间feature map大小。
+
+======================================================================================
+QT编译报错引用未定义的函数。。。。
+pro文件中的动态库有问题，或者之前编译过，修改了部分pro文件的内容从新编译会出问题，把之前编译生成的-Debug文件夹删除，从新编译可能成功。
+
+
+
+==========================================
+李荣华：ip：192.168.1.16		lironghua    lrh123
+
+==============================================================
+一个字节Byte=8bit，即1字节=8位，对应着两位的16进制数，0x0000内存位置可以存放一个0xnn的16进制数据，16×16 = (2)^8,例如再0x0000地址开始存放两个16进制数的3和4,则0x0000下存放0x03,0x0001下存放0x04。
+大小端模式，小端模式是低位低地址，高位高地址，而大端模式相反。内存存放数据如下：
+地址    0x0000         0x0001         0x0002          0x0003 
+数据    0x12            0x34           0xab           0xcd 
+如果我们去读取一个地址为 0x0000 的四个字节变量，若字节序为大端（big-endian），则读出结果为0x1234abcd；若字节序为（小端）little-endian，则读出结果为0xcdab3412。读取的时候靠近0x的地方为高位。
+如果我们将0x1234abcd 写入到以 0x0000 开始的内存中，则Little endian 和 Big endian 模式的存放结果如下：
+地址           0x0000         0x0001        0x0002          0x0003
+大端           0x12           0x34            0xab            0xcd 
+小端           0xcd           0xab            0x34            0x12 
+一般来说，x86 系列 CPU 都是 little-endian 的字节序，PowerPC 通常是 big-endian，网络字节顺序也是 big-endian还有的CPU 能通过跳线来设置 CPU 工作于 Little endian 还是 Big endian 模式。
+================================================================================================================================================================================
+C++中，类继承时候，定义派生类时候先调用（先执行到派生类构造函数）派生类构造函数，但是不执行函数内容，就会调用基类构造函数，按照继承顺序调用基类构造函数，全部基类构造函数执行结束后，在定义派生类中的数据变量，然后才执行派生类构造函数中的内容参见“/code/c++/book13中的main()函数的输出”。并且1.如果基类中没有定义默认构造函数或带有缺省值的构造函数而只有带参数的构造函数时，派生类的构造函数中必须显式的给出基类名和参数表（放在派生类构造函数定义时候的参数数列表右括号的后表并加“：基类构造函数（参数）”冒号-基类构造函数-参数形式），否则编译器将报错。2.如果基类中没有定义构造函数，这派生类也可以不定义构造函数，系统会自动在类中添加默认的构造函数的3.如果基类中定义了带有参数表的构造函数时，派生类就应当定义相应的构造函数
+==============================================================================================================================
+pyrhon中 with open("filename.txt","r") as f:
+		filename = f.read()
+	print(filename.split("\n"))
+当“filename.txt”文件最后没有回车符号时候，如果文件是手动编辑过，则上边的打印仍然最后一个元素为回车，如果文件是通过f.write()保存的，则上边打印最后不包含“\n”
+主要是因为txt文件直接用f.write(content)保存时候，content内容误差错的保存，但是当手动打开文件后，如果进行一次保存，则会导致content后边多一个“\n”符号，例如：
+"a b c d e"只在在python中保存，保存结果不变化，文件大小为9字节，通python的txt = f.read()读出来发现再用print(txt.split(" "))打印，会显示['a', 'b', 'c', 'd', 'e']，但是打开文件直接保存一下，文件大小变为10字节，再次打印时候['a', 'b', 'c', 'd', 'e\n']
+
+strip()移除首尾空格和回车
+=======================================================================================================
+$ git stash    $checkout another_branch   $git stash pop
+首先，当前分支输入git status 后，存在修改文件，则上面第一个命令会保存修改，第二个命令切换分支，第三个命令将之前分支的修改转移到当前分支，之前分支且不存在修改了。
+---------------------------------------------------------------------------------------------
+关于fork他人项目：
+1.拷贝他人项目：在git网上fork其他人的原pro到本人远程仓库，然后git clone 本人的远程项目pro地址。
+2.更新本地与他人的pro一致：git remote -v 查看远程仓库，仅仅有自己的远程仓库。添加他人原项目pro地址：git remote add upstream <他人原git地址>，其中upstream为今后他人原pro地址的名称，类似与自己远程的origin;再次git remote -v 可以看到他人原pro地址了;获取原仓库的更新git fetch upstream，使用fetch更新，fetch后会被存储在一个本地分支upstream/master上;合并到本地分支：git checkout master ,git merge upstrem/master;此时git log 就能看到原仓库pro的更新了。
+3.如果需要自己git上fork的仓库需要与原仓库同步，git push origin master即可。自己git需要与原git拥有相同的除master外的分支方法，查看下一条。
+4.如果需要原仓库pro的除master外的其他分支:git branch会仅仅有一个*绿色的master，然后git checkout upstream/demo -b demo,在本创建一个新的demo并与原远程pro的demo一直，并在本地切换到demo，再git branch后会显示*绿色demo第二行是master。此时git push origin demo:demo
+-----------------------------------------------------------------------------------
+将本地的修改更新的fork他人的原仓库pro：
+先git pull，若有冲突，先解决冲突,解决完冲突后 git diff --check,无冲突后，然后，git add 修改文件;git commit -m "";git push origin 将当前分支commit的内容修改push到自己远程;然后在自己网页提merge request.
+
+=========================================================
+pip升级到10.0.1之后可能会出现这个错误
+pip list 报错：TypeError: 'module' object is not callable
+解决办法链接：https://www.jianshu.com/p/373d04d80f3e
+解决办法一：python3 -m pip install --user --upgrade pip==9.0.3对已经升级的pip降级（亲侧有效）
+解决办法二：     $curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+		$python get-pip.py网页博主测试有效
+
+=========================================================================
+C++中有时候第三方库的头文件"include"在当前工程的.h文件中会报错，但是"include"在.cpp文件中不会报错，原因是.h 文件可能会被其它文件包含，但是.cpp不会被其他文件包含，其他文件包含时候会可能会与其他文件中的别的包含文件冲突，而且有时候不用的头文件就不要包含了
+
+
+=============================================================================
+显卡驱动安装(需要进入 Ctrl + Alt + F1  进行安装)
+1.先卸载之前的 sudo ./NVIDIA-....run --uninstall		按提示：yes->ok->等待卸载->"卸载成功"->ok
+2.关闭图形界面sudo service lightdm stop
+3.安装新的显卡驱动 sudo ./NVIDIA-...run         按提示：continue.. ->ok -> ->no ->ok ->全部默认
+4.开启图形界面：  sudo service lightdm start
+
+注意：若是新系统 需要关闭自带的驱动nouveau，尝试https://blog.csdn.net/zhang970187013/article/details/81012845
+具体：
+1.卸载原有的NVIDIA驱动:sudo apt-get remove –purge nvidia*
+2.禁用nouveau:  
+sudo gedit /etc/modprobe.d/blacklist.conf   
+在文本最后添加以下两行内容：
+blacklist nouveau
+option nouveau modeset=0
+保存退出后：
+sudo update-initramfs -u
+重启电脑后输入：
+lsmod | grep nouveau   无任何输出说明禁用成功（此时可能电脑上什么都不显示，用其他电脑ssh链接）
+3.直接按上面3安装还可能报错
+sudo ./NVIDIA-....run -noX-check -no-nouveau-check –no-opengl-files然后按照提示安装
+===================================================================================
+scp -r bmi@192.168.1.2:/system1/Dataset/coco2014/train2014 Dataset/coco
+==================================================================================
+C++中：
+sizeof(array数组) 会返回数组的占用内存大小 想得到长度 用`sizeof(array)/sizeof(array[0])`，且作为参数传递时候，形参不包含数组长度，所以需要传递数字长度，或者占用内存大小。
+
+====================================================================================================
+Qt中添加库，Build加入TORCH  /home/ljdong/LIB/libtorch   然后在.pro文加 
+
+INCLUDEPATH += $(TORCH)/include
+LIBS += $(TORCH)/lib/lib*
+还可能报错
+/usr/bin/ld: warning: libcudart-1b201d85.so.10.1, needed by /home/ljdong/LIB/libtorch/lib/libtorch.so, not found (try using -rpath or -rpath-link)
+/usr/bin/ld: warning: libgomp-753e6e92.so.1, needed by /home/ljdong/LIB/libtorch/lib/libtorch.so, not found (try using -rpath or -rpath-link)
+/usr/bin/ld: warning: libnvToolsExt-3965bdd0.so.1, needed by /home/ljdong/LIB/libtorch/lib/libtorch.so, not found (try using -rpath or -rpath-link)
+/home/ljdong/LIB/libtorch/lib/libtorch.so: undefined reference to `nvtxRangePop@libnvToolsExt.so.1'
+/home/ljdong/LIB/libtorch/lib/libtorch.so: undefined reference to `nvtxRangePushA@libnvToolsExt.so.1'
+/home/ljdong/LIB/libtorch/lib/libtorch.so: undefined reference to `nvtxMarkA@libnvToolsExt.so.1'
+
+然后在 Build中的LD_LIBRARY_PATH加入  $(TORCH)/lib就不会报错

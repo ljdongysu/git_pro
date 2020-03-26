@@ -1,0 +1,131 @@
+链接：https://www.jianshu.com/p/964de879904a
+即设git log 有三次commit 如下：
+===========================
+commit id3
+Author：...
+Date:...
+  add 3 commit
+
+
+commit id2
+Author：...
+Date:...
+  add 2 commit
+
+
+commit id1
+Author：...
+Date:...
+  add 1 commit
+================================
+想要将add 3 commit 和add 2 commit 合并，则执行git rebase -i id1（要合并的最早的commit的前一个id）
+进入vim界面 将id3之前的pick改为squash ，然后esc  ：wq 进入新的vim界面，然后将上面两个commit的内容修改为一个新的“add 2 and 3 commit”就可以，然后add 3 commit 和add 2 commit 就会合并为add 2 and 3 commit一次commit，下面是pick和suqash含义：
+    pick 的意思是要会执行这个 commit
+    squash 的意思是这个 commit 会被合并到前一个commit
+测试时候按第一次进入vim界面，修改pick为suqash后，按esc没反应这时候，按Ctrl+x，然后按提示保存，当再次进入新的vim界面时候就是修改commit时候了，如果只改了第一次的pick而第二次不改commit提示，则会两个提示都在但是合并为了一个commit
+
+但是commit中交叉着不同author的commit时候，想要合并单个author的多次commit时候，可能会出现如下
+
+============================================================
+commit id6
+Author：Jhon
+Date:...
+  add 6 commit
+
+
+commit id5
+Author：Jhon
+Date:...
+  add 5 commit
+
+
+commit id4
+Author：Jhon
+Date:...
+  add 4 commit
+
+commit id3
+Author：Andy
+Date:...
+  add 3 commit
+
+
+commit id2
+Author：Jhon
+Date:...
+  add 2 commit
+
+
+commit id1
+Author：Andy
+Date:...
+  add 1 commit
+
+
+commit id0
+Author：Jhon
+Date:...
+  add 0 commit
+==================================================================
+
+想要合并4,5,6时候，一种方法 git rebase -id3 ,然后会出现多个pick，不仅仅包含id4,5,6还可能包含id0，2,然后不用修改0,2的pick只需要将要合并的id4,5,6前pick改为squash（或s），保存推出后，可能会出现一下信息
+error: 不能应用 id0   add 0 commit
+当您解决了此问题后，执行 "git rebase --continue"。
+如果您想跳过此补丁，则执行 "git rebase --skip"。
+要恢复原分支并停止变基，执行 "git rebase --abort"。
+
+
+执行git rebase --skip就出现上面信息，但是内容为id2的信息，继续执行git rebase --skip，然后会进入vim让修改commit 信息，修改完成后保存就完成了合并，这样会造成git push 失败，切git push origin master -f 同样失败
+然后git status信息为：
+位于分支 master
+您的分支和 'origin/master' 出现了偏离，
+并且分别有 1 和 29 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+无文件要提交，干净的工作区
+
+
+
+
+
+
+
+
+撤回commit：
+git add . //添加所有文件
+git commit -m "本功能全部完成
+执行完commit后，想撤回commit，怎么办？
+
+git reset --soft HEAD^
+
+这样就成功的撤销了你的commit
+注意，仅仅是撤回commit操作，您写的代码仍然保留。
+
+
+
+HEAD^的意思是上一个版本，也可以写成HEAD~1
+
+如果你进行了2次commit，想都撤回，可以使用HEAD~2
+
+ 
+至于这几个参数：
+--mixed 
+意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作
+这个为默认参数,git reset --mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
+
+ 
+--soft  
+不删除工作空间改动代码，撤销commit，不撤销git add . 
+ 
+--hard
+
+删除工作空间改动代码，撤销commit，撤销git add . 
+
+注意完成这个操作后，就恢复到了上一次的commit状态。
+
+ 
+
+顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：
+
+git commit --amend
+
+此时会进入默认vim编辑器，修改注释完毕后保存就好了

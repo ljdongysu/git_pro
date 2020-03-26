@@ -1,0 +1,44 @@
+print(False and True)  # False
+print(False and False)  # False
+print(True and True)  # True
+print(True and False)  # False
+
+print(False or True)  # True
+print(False or False)  # False
+print(True or True)  # True
+print(True or False)  # True
+
+
+
+
+
+print('' or 5 or 0)  # 5
+print(5 and 4)  # 4
+print('' or 5 or 0 and 4)  # 5
+
+
+a = [1,2,3,4,5]
+b = False
+
+
+
+#1. 在纯and语句中，如果每一个表达式都不是假的话，那么返回最后一个，因为需要一直匹配直到最后一个。如果有一个是假，那么返回假
+#2. 在纯or语句中，只要有一个表达式不是假的话，那么就返回这个表达式的值。只有所有都是假，才返回假
+#3. 在or和and语句比较难表达，总而言之，碰到and就往后匹配，碰到or如果or左边的为真，那么就返回or左边的那个值，如果or左边为假，继续匹配or右边的参数。
+
+
+# 　　其一, 在不加括号时候, and优先级大于or
+#
+# 　　and运算有假则取假，如果没有假则取最后一个真（需要保证为真，则需要运算打最后一个真）
+#
+# 　　or运算会取从左到右的第一个真，若果没有就取假
+#
+# 　　其二, x or y 的值只可能是x或y. x为真就是x, x为假就是y
+#
+# 　　第三, x and y 的值只可能是x或y. x为真就是y, x为假就是x
+#
+# 显然,
+#
+# 　　对于, 1 or 5 and 4: 先算5 and 4, 5为真, 值为4. 再算1 or 4, 1 为真,值为1
+#
+# 　　对于, (1 or 5) and 4: 先算1 or 5, 1为真, 值为1. 再算1 and 4, 1为真,值为4

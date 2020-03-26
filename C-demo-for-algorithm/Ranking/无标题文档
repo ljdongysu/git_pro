@@ -1,0 +1,2 @@
+insert_sort:
+直接插入和二分插入看了代码，还能看明白，但是shell排序看了很长时间，自己把分组和每组个数混淆，导致分组情况为第一次将奇数组和偶数组排正确，以后将4的倍数组排正确。。。但是最终的数组无须，相当于第一次后就没有进行排序了。（https://blog.csdn.net/chenliguan/article/details/53037482   3.2.3第一个函数）的仅仅交换之后间隔逐渐-1时候才能有序，而间隔逐渐变为一半则无效，另一个网址是对的https://blog.csdn.net/robomaster/article/details/50953265?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
