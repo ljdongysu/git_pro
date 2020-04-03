@@ -78,11 +78,11 @@ private:
     ICudaEngine* engine;
     IExecutionContext* context;
     const float* meanData;
-    const char* INPUT_BLOB_NAME = "data";
-    const char* OUTPUT_BLOB_NAME = "pool6";
+//    const char* INPUT_BLOB_NAME = "data";
+//    const char* OUTPUT_BLOB_NAME = "pool6";
     const int MAX_BATCHSIZE = 64; //should less than serialized model's MAX_BATCHSIZE
-//    const char* INPUT_BLOB_NAME = "input";
-//    const char* OUTPUT_BLOB_NAME = "output";
+    const char* INPUT_BLOB_NAME = "input";
+    const char* OUTPUT_BLOB_NAME = "output";
 //    const int MAX_BATCHSIZE = 32; //should less than serialized model's MAX_BATCHSIZE
     int device = 0;
     int batchSize = 0;

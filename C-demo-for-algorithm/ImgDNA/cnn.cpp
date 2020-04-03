@@ -275,8 +275,8 @@ void CNN::Images2Data(const std::vector<cv::Mat> &frames, const int batchSize, c
             for (size_t j = 0, volChl = INPUT_H * INPUT_W; j < volChl; ++j)
             {
                 data[i * IMAGE_SIZE + c * volChl + j] =
-                        (float(image.data[j * INPUT_C + 2 - c]) - means[2 - c]) * 0.017f;//mobilenetv2-pytorch and MobileNetv2-caffe
-//                        (float(image.data[j * INPUT_C + 2 - c]));// - means[2 - c]) * 0.017f;
+//                        (float(image.data[j * INPUT_C + 2 - c]) - means[2 - c]) * 0.017f;//mobilenetv2-pytorch and MobileNetv2-caffe
+                        (float(image.data[j * INPUT_C + 2 - c]));// - means[2 - c]) * 0.017f;
 //                        (float(image.data[j * INPUT_C ]));
 //                (float(image.data[j * INPUT_C + 2 - c]) - means[c]) * 0.017f;//0.913
 

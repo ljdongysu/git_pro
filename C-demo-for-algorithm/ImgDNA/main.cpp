@@ -13,11 +13,11 @@ int main()
 {
     string referDir = "/home/ljdong/data/dna_data/imageDataset/refer/Parasite/";
     string trainDir = "/home/ljdong/data/dna_data/imageDataset/train/Parasite/";
-    string modelNet = "/home/ljdong/code/qt/build-VideoDNA-Desktop_Qt_5_10_0_GCC_64bit-Debug/test_video_DNA/model/MobileNet_model.bin";
+//    string modelNet = "/home/ljdong/code/qt/build-VideoDNA-Desktop_Qt_5_10_0_GCC_64bit-Debug/test_video_DNA/model/MobileNet_model.bin";
 //    string modelNet = "/home/ljdong/PycharmProjects/tensorrt/TensorRT-sampleResNet50/model/MobileNet_v2_pool6.bin";
 
 
-//    string modelNet = "/home/ljdong/code/qt/build-VideoDNA-Desktop_Qt_5_10_0_GCC_64bit-Debug/test_video_DNA/model/inception_original.trt";
+    string modelNet = "/home/ljdong/PycharmProjects/tensorrt/model_trt/cars196_39.trt";
 //        string modelNet = "/home/ljdong/PycharmProjects/tensorrt/model_trt/MobileNetV2_Softmax_IQiyi_53.trt";
 
 
