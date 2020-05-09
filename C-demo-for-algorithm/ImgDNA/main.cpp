@@ -16,8 +16,9 @@ int main()
 //    string modelNet = "/home/ljdong/code/qt/build-VideoDNA-Desktop_Qt_5_10_0_GCC_64bit-Debug/test_video_DNA/model/MobileNet_model.bin";
 //    string modelNet = "/home/ljdong/PycharmProjects/tensorrt/TensorRT-sampleResNet50/model/MobileNet_v2_pool6.bin";
 
+    string modelNet = "/home/ljdong/PycharmProjects/tensorrt/model_trt/yx.trt";
 
-    string modelNet = "/home/ljdong/PycharmProjects/tensorrt/model_trt/cars196_39.trt";
+//    string modelNet = "/home/ljdong/code/qt/build-VideoGene-Desktop_Qt_5_14_0_GCC_64bit-Debug/test_video_Gene/model/net.bin";
 //        string modelNet = "/home/ljdong/PycharmProjects/tensorrt/model_trt/MobileNetV2_Softmax_IQiyi_53.trt";
 
 

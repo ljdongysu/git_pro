@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/快速排序.py" line="70" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6754fe68-52b8-4294-8436-0591aa7c77c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/冒泡排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基数排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/堆排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/归并排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/快速排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/直接插入排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/选择排序.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/cnn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/cnn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/cnn.h" beforeDir="false" afterPath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/cnn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C-demo-for-algorithm/ImgDNA/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C-demo-for-algorithm/build-ImgDNA-Desktop_Qt_5_14_0_GCC_64bit-Debug/ImgDNA" beforeDir="false" afterPath="$PROJECT_DIR$/../C-demo-for-algorithm/build-ImgDNA-Desktop_Qt_5_14_0_GCC_64bit-Debug/ImgDNA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gitskills/git合并commit和撤销commit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../gitskills/git合并commit和撤销commit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C-demo/strToChar/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C-demo/strToChar/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C-demo/strToChar/strToCh.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C-demo/strToChar/strToCh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C-demo/strToChar/strToChar.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offerCode/MergeList14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offerCode/Rectangle15.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offerCode/ReverseList13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F3.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/f2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/f3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-demo/python_import/diff_imgload_imgread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-demo/python_import/functiontest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-demo/python_import/vat_impor.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +37,17 @@
     <session id="-81001594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="17" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="2" />
         </counts>
@@ -54,7 +55,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="17" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -75,60 +76,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/快速排序.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-              <folding>
-                <marker date="1585730829161" expanded="true" signature="1575:1580" ph="..." />
-                <marker date="1585730829161" expanded="true" signature="1779:1784" ph="..." />
-                <marker date="1585730829161" expanded="true" signature="2490:2620" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/基数排序.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-              <folding>
-                <marker date="1585737370292" expanded="true" signature="433:435" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/选择排序.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <marker date="1585654577455" expanded="true" signature="33:38" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/堆排序.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-              <folding>
-                <marker date="1585728515888" expanded="true" signature="1567:1572" ph="..." />
-                <marker date="1585728515888" expanded="true" signature="1567:1908" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutogradDemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="391">
               <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -146,7 +96,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExtendingAutograd.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -159,14 +109,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/归并排序.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diff_imgload_imgread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="110" selection-start-column="110" selection-end-column="110" />
+            <state relative-caret-position="564">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="29" />
               <folding>
-                <marker date="1585728515872" expanded="true" signature="320:867" ph="..." />
-                <marker date="1585728515872" expanded="true" signature="965:970" ph="..." />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -260,6 +209,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -406,9 +356,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10810811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10921125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -446,95 +396,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230962">
-          <caret line="13586" column="9" selection-start-line="13586" selection-start-column="9" selection-end-line="13586" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file.txt" />
+    <entry file="file://$PROJECT_DIR$/file1.txt" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-            <marker date="1578477473394" expanded="true" signature="557:793" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/直接插入排序.py">
+    <entry file="file://$PROJECT_DIR$/直接插入排序.py" />
+    <entry file="file://$PROJECT_DIR$/冒泡排序.py" />
+    <entry file="file://$PROJECT_DIR$/快速排序.py" />
+    <entry file="file://$PROJECT_DIR$/基数排序.py" />
+    <entry file="file://$PROJECT_DIR$/选择排序.py" />
+    <entry file="file://$PROJECT_DIR$/归并排序.py" />
+    <entry file="file://$PROJECT_DIR$/堆排序.py" />
+    <entry file="file://$PROJECT_DIR$/AutogradDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="391">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding>
-            <marker date="1585640063429" expanded="true" signature="88:89" ph="..." />
-            <marker date="1585640063429" expanded="true" signature="331:621" ph="..." />
-            <marker date="1585640063429" expanded="true" signature="484:485" ph="..." />
-            <marker date="1585640063429" expanded="true" signature="497:569" ph="..." />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/冒泡排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-end-line="12" />
-          <folding>
-            <marker date="1585640637706" expanded="true" signature="62:67" ph="..." />
-            <marker date="1585640637706" expanded="true" signature="290:366" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/快速排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <marker date="1585730829161" expanded="true" signature="1575:1580" ph="..." />
-            <marker date="1585730829161" expanded="true" signature="1779:1784" ph="..." />
-            <marker date="1585730829161" expanded="true" signature="2490:2620" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基数排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <marker date="1585737370292" expanded="true" signature="433:435" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/选择排序.py">
+    <entry file="file://$PROJECT_DIR$/CUDADemo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <marker date="1585654577455" expanded="true" signature="33:38" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/归并排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="110" selection-start-column="110" selection-end-column="110" />
-          <folding>
-            <marker date="1585728515872" expanded="true" signature="320:867" ph="..." />
-            <marker date="1585728515872" expanded="true" signature="965:970" ph="..." />
-          </folding>
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -552,34 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/堆排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <marker date="1585728515888" expanded="true" signature="1567:1572" ph="..." />
-            <marker date="1585728515888" expanded="true" signature="1567:1908" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutogradDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CUDADemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExtendingAutograd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -587,6 +450,16 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
             <marker date="1578454788327" expanded="true" signature="80:85" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diff_imgload_imgread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

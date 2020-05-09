@@ -72,22 +72,22 @@ private:
     const int INPUT_C = 3;
     const int INPUT_W = 224;
     const int INPUT_H = 224;
-    const int IMAGE_SIZE = 150528; //INPUT_C * INPUT_W * INPUT_H
+    const int IMAGE_SIZE = INPUT_C * INPUT_W * INPUT_H; //INPUT_C * INPUT_W * INPUT_H
     const float means[3] = {103.94f, 116.78f, 123.68f};
     IRuntime* runtime;
     ICudaEngine* engine;
     IExecutionContext* context;
     const float* meanData;
-//    const char* INPUT_BLOB_NAME = "data";
-//    const char* OUTPUT_BLOB_NAME = "pool6";
-    const int MAX_BATCHSIZE = 64; //should less than serialized model's MAX_BATCHSIZE
     const char* INPUT_BLOB_NAME = "input";
     const char* OUTPUT_BLOB_NAME = "output";
+    const int MAX_BATCHSIZE = 32; //should less than serialized model's MAX_BATCHSIZE
+//    const char* INPUT_BLOB_NAME = "input";
+//    const char* OUTPUT_BLOB_NAME = "output";
 //    const int MAX_BATCHSIZE = 32; //should less than serialized model's MAX_BATCHSIZE
     int device = 0;
     int batchSize = 0;
 public:
-    const int OUTPUT_SIZE = 1024; // should less than  DNAC::FEATURE_LENGTH
+    const int OUTPUT_SIZE = 2048; // should less than  DNAC::FEATURE_LENGTH
 
     cv::Mat Normal(cv::Mat &src);
 };
