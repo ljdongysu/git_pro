@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2793e80d-b087-41dc-a295-05f0d4aacc94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C-demo/strToChar/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C-demo/strToChar/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C-demo/strToChar/strToCh.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C-demo/strToChar/strToCh.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C-demo/strToChar/strToChar.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../offerCode/MergeList14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../offerCode/Rectangle15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../offerCode/ReverseList13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CopyFileFromCSV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadCVSFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/cnn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/cnn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/cnn.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/cnn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C-demo-for-algorithm/ImgDNA/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C-demo-for-algorithm/build-ImgDNA-Desktop_Qt_5_14_0_GCC_64bit-Debug/ImgDNA" beforeDir="false" afterPath="$PROJECT_DIR$/../../C-demo-for-algorithm/build-ImgDNA-Desktop_Qt_5_14_0_GCC_64bit-Debug/ImgDNA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PytorchDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/F3.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/f1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/f2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/f3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PytorchDemo/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_import/diff_imgload_imgread.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_import/functiontest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_import/vat_impor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gitskills/git合并commit和撤销commit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../gitskills/git合并commit和撤销commit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CopyFileFromCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/CopyFileFromCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +20,13 @@
     <session id="810917666">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="960" />
+          <entry key="py" value="963" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="960" />
+          <entry key="Python" value="963" />
         </counts>
       </usages-collector>
     </session>
@@ -87,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CopyFileFromCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -123,10 +104,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="344" />
+    <option name="y" value="389" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,7 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,6 +135,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/code/fucking-algorithm/demo/数据结构系列" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -240,7 +222,7 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17760618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18257032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -283,13 +265,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CopyFileFromCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24019139" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -82,9 +82,21 @@ error: 不能应用 id0   add 0 commit
 并且分别有 1 和 29 处不同的提交。
   （使用 "git pull" 来合并远程分支）
 无文件要提交，干净的工作区
+
 -----------------------------------------------------这种情况可以git add 。 commit 然后再--continue，然后会修改新的commit内容，主要由于之前的提交push有交差
-
-
+且git push origin master时还可能出现
+To git@gitlab.bmi:lj.dong/dna.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: 无法推送一些引用到 'git@gitlab.bmi:lj.dong/dna.git'
+提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
+提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+这时候强制推向远程 git push -f origin master，不能执行git pull否则额外仅仅额外多commit
+若remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+To git@gitlab.bmi:lj.dong/dna.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: 无法推送一些引用到 'git@gitlab.bmi:lj.dong/dna.git'
+则需要添加远程强制推的权限
 
 
 
@@ -130,3 +142,13 @@ HEAD^的意思是上一个版本，也可以写成HEAD~1
 git commit --amend
 
 此时会进入默认vim编辑器，修改注释完毕后保存就好了
+
+
+
+
+commit 0a7b74660c80699ade4d40984ad5a27ca5413c56
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Fri Apr 24 16:04:47 2020 +0800
+
+    fps to 1/2
+

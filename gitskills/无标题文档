@@ -1,0 +1,189 @@
+commit 25176d56a74d7258a1f83080950d4bd66c402331
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue May 12 13:52:38 2020 +0800
+
+    去除冗余
+
+commit 2166cee836ee5923b5f64f519d199ec188c4872e
+Merge: a58e004 5ca61e9
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue May 12 13:49:11 2020 +0800
+
+    合并commit
+
+commit a58e0046d59009965587864742e62c4e20024cf6
+Author: 董利健 <lj.dong@bmi-tech.cn>
+Date:   Tue May 12 10:33:16 2020 +0800
+
+    double->float
+
+commit 00b9050f7475deb8064aa517bb3bcfbb7f7648a8
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Sun Apr 26 14:19:25 2020 +0800
+
+    将double换为float
+
+commit fb5d7efd715d8847453a1561505ab15ca320c1e9
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed May 6 18:57:58 2020 +0800
+
+    半秒一帧
+
+commit 719b553aaeef88cd8d6cbabac18474932bc38bd5
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Thu Mar 26 11:47:54 2020 +0800
+
+    包含时间Demo，去掉第一阶段等
+
+commit 4385b90addbe8b493136b654559b263f850328a0
+Author: sunhao <smartadpole@gmail.com>
+Date:   Thu Mar 19 18:30:32 2020 +0800
+
+    改进循环队列
+
+commit 4e675af927cbe887eb722a6a8e54e830089d9383
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed Mar 25 19:11:32 2020 +0800
+
+    特征提取模型改为MobileNetV2caffe
+
+commit f1a7e06c094cbad738a44c206f5447cf5caf3f43
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed Mar 25 19:01:01 2020 +0800
+
+    换为MobileNetV2模型
+
+commit 5ca61e9acbea6b9993665d3ab195fdd56d22a2e4
+Merge: d1f2856 437cf7d
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue May 12 11:02:52 2020 +0800
+
+    合并分支
+
+commit 437cf7d2fe07d2a60a90ee883ab1661b9344cf62
+Merge: 32881bb 9cc16ee
+Author: 董利健 <lj.dong@bmi-tech.cn>
+Date:   Tue May 12 10:33:16 2020 +0800
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request sunhao/dna!11
+
+commit 9cc16eec5185c114a159fa865fb10cf838d8eea9
+Author: 董利健 <lj.dong@bmi-tech.cn>
+Date:   Tue May 12 10:33:16 2020 +0800
+
+    Master
+
+commit d1f2856ad79f409bfb418732e97e3faec11612e6
+Merge: 32881bb 1f148ac
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue May 12 10:27:52 2020 +0800
+
+    opencv按秒抽帧，double->float
+
+commit 1f148acfdf09cbdaf85042c2958dd02b9dc9753a
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue May 12 09:58:30 2020 +0800
+
+    将double换为float
+
+commit 785d44366cd425e0a129bb338c43952768c5682c
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Sat May 9 17:15:45 2020 +0800
+
+    FrameFpsRemoveFirstMean
+
+commit 32881bb0d192d860bd22a014fcacc52dcbad7faf
+Merge: 9af5556 c144469
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed May 6 19:01:02 2020 +0800
+
+    添加机器验证
+
+commit c14446986dae5a4c8d7e40808a253ca6e0be8c01
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed May 6 18:57:58 2020 +0800
+
+    添加机器验证
+
+commit b57cd0747a09766f65ac10cc66f431922eba0146
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed May 6 17:19:15 2020 +0800
+
+    NOtimealign
+
+commit 96cef337b7118daa6fe399a95ed5dc768408fd9d
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue Apr 28 16:16:59 2020 +0800
+
+    删除冗余输出
+
+commit 12f54114b87195f34d5e58c9311181fabc1478ed
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue Apr 28 10:20:24 2020 +0800
+
+    添加时间
+
+commit 6e9bdba757ad373d9c37c65d97450798d5482ed5
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Tue Apr 28 09:38:14 2020 +0800
+
+    run with high CPU
+
+commit d2e6465724e67902b00d3e94871ea4eb48a3265f
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Mon Apr 27 18:15:19 2020 +0800
+
+    ss
+
+commit 76b699bc406af422fbe8fdbff05d2715a578107c
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Sun Apr 26 14:19:25 2020 +0800
+
+    fps change
+
+commit 0a7b74660c80699ade4d40984ad5a27ca5413c56
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Fri Apr 24 16:04:47 2020 +0800
+
+    fps to 1/2
+
+commit 484e16b17e46b85a58dc4e60ba3ee84ba2057825
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Fri Apr 24 13:41:51 2020 +0800
+
+    error
+
+commit 3040c709fd82110b309a309fcd1d0686c285b0d1
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Fri Apr 24 13:41:06 2020 +0800
+
+    error
+
+commit 56e698cab583afa5b636d04de6540ed41d8a7851
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Fri Apr 24 13:11:11 2020 +0800
+
+    All_iFrame_not_mean
+
+commit e53d4b5913883ba92a41b4ec442f9e43ab6d6f2d
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Thu Apr 23 09:53:01 2020 +0800
+
+    减少冗余输出
+
+commit acc59889e5b3fa244d5b6451e78e073ee80db951
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Thu Apr 23 09:32:52 2020 +0800
+
+    包含时间Demo，去掉第一阶段等
+
+commit 9af5556a8dc3e79d61b3d472898f46a4b619ed0d
+Author: lj.dong@bmi-tech.cn <841476652@qq.com>
+Date:   Wed Mar 25 19:01:01 2020 +0800
+
+    换为MobileNetV2模型
+

@@ -33,7 +33,7 @@ def main1():
             i += 1
             print(name)
     print(i)
-def main2
+def main2():
     L = []
     with open('train.csv','r') as f1:
         reader = csv.reader(f1)
