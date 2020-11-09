@@ -4,6 +4,7 @@ https://blog.csdn.net/qq_27942333/article/details/84719737
 extern const int a;
 
 在a.c中：
+//没有进行#include"a.h"
  const int a = 10;
 
 在main.c中：
@@ -17,7 +18,7 @@ extern const int a;
 6     printf("%d\n",a);
 7 }
 
-再C编译器下能够运行，但是C++由于存在const，不能运行，需要再a.c中修改为extern const int a = 10;若没有const则上面的可以运行
-或者.h中extern const int ABC;cpp中#include“*.h” 且extern const int ABC = 10 ;新的cpp中只需要#include“*.h”即可以
+再C编译器下能够运行，但是C++由于存在const，不能运行，需要再a.c中修改为extern const int a = 10;若没有const则上面的可以运行（C++同样可以运行）
+或者.h中extern const int ABC;cpp中#include“*.h” 且extern const int ABC = 10 cpp的 extern可有可无，关键是#include“*.h”;新的cpp中只需要#include“*.h”即可以
 
 

@@ -1,0 +1,6 @@
+以/home/ljdong/code/qt/QtPtogramming/build-untitled8-Desktop_Qt_5_14_0_GCC_64bit-Release/libuntitled8.so 动态库为例
+1.若pro文加中LIBS += -L/home/ljdong/code/qt/QtPtogramming/build-untitled8-Desktop_Qt_5_14_0_GCC_64bit-Release -luntitled8 则编译通过直接运行
+2.若pro文加中LIBS += /home/ljdong/code/qt/QtPtogramming/build-untitled8-Desktop_Qt_5_14_0_GCC_64bit-Release/*  则编译(若该文件中只有其他非lib文件，则编译报错“Makefile: file not recognized: File format not recognized”，原因是文件夹中存在了一个.o文件，需要将“*”改为“lib*”)通过，运行时候会报错“error while loading shared libraries: libuntitled8.so.1: cannot open shared object file: No such file or directory
+”此时将文件夹路径加入到运行时候的LD_IBRARY_PATH中也能够运行。===================最后一次运行无论1,2方法都需要将文件夹路径加入到运行的LD_LIBRARY_PATH中=======================
+找到上述问题的原因了，1.方法会将库对应的路径自动加入到运行时的LD_LIBRARY_PATH中，2方法不会，进行2操作时候会改动运行时LD_LIBRARY_PATH，这样会造成LD_LIBRARY_PATH不再自动改变，所以用2方法添加库之后，LD_LIBRARY_PATH已经修改了，再用1方法添加其他库时候，必须修改运行时候LD_LIBRARY_PATH，否则，运行会找不到库。
+LIBS += -L/home      “-L”会将后面路径加入到运行时的LD_LIBRARY_PATH中。
