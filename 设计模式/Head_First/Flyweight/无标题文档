@@ -1,0 +1,6 @@
+ Flyweight(&ss) 调用一次
+下面调用顺序，1.SharedState(const std::string &brand, const std::string &model, const std::string &color)，
+	2.std::string GetKey(const SharedState &ss) const
+	3.std::make_pair<std::string, Flyweight>（）第二个参数传递调用Flyweight(const Flyweight &other) : shared_state_(new SharedState(*other.shared_state_));
+	3.this->flyweights_.insert（）再次调用Flyweight(const Flyweight &other) : shared_state_(new SharedState(*other.shared_state_));
+        
