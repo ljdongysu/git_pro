@@ -1,0 +1,29 @@
+#! /bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "zero param"
+	exit
+elif [ $# -eq 2 ]
+then
+	echo "param 2"
+	echo $0
+	echo $1	
+	echo $2
+elif [ $# -eq 3 -o $# -gt 5 ]
+then
+	echo "parameter 3"
+	echo $0
+	echo $1	
+	echo $2
+	replace=$3
+elif [ $# -eq 4 ]
+then
+	echo "aprameter 4"
+	echo $0
+	echo $1	
+	echo $2
+	echo $3
+fi
+echo $replace
+

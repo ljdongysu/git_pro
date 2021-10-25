@@ -22,3 +22,6 @@ extern const int a;
 或者.h中extern const int ABC;cpp中#include“*.h” 且extern const int ABC = 10 cpp的 extern可有可无，关键是#include“*.h”;新的cpp中只需要#include“*.h”即可以
 
 
+
+2021.10.11 
+C/C++中extern关键字详解 https://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777431.html
