@@ -70,4 +70,8 @@ Thumbs.db
 # --------
 *.dll
 *.exe
+func-opencv/RunOpenCV/*build*
+func-opencv/RunOpenCV/*idea*
+func-opencv/RunOpenCV/*.jpg
+func-opencv/RunOpenCV/*Makefile
 
