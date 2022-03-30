@@ -4,6 +4,8 @@
 //用于验证仿射变换，旋转缩放图像，其中也包含了图像上的点通过两条线段进行映射的操作
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
+#include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <stdio.h>
 
